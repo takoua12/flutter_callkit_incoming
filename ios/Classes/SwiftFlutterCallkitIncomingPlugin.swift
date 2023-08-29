@@ -195,11 +195,10 @@ public class SwiftFlutterCallkitIncomingPlugin: NSObject, FlutterPlugin, CXProvi
             self.data = data
         }
         
-        var handle: CXHandle?
-        handle = CXHandle(type: self.getHandleType(data.handleType), value: data.getEncryptHandle())
+        //var handle: CXHandle?handle = CXHandle(type: self.getHandleType(data.handleType), value: data.getEncryptHandle())
         
         let callUpdate = CXCallUpdate()
-        callUpdate.remoteHandle = handle
+        //callUpdate.remoteHandle = handle
         callUpdate.supportsDTMF = data.supportsDTMF
         callUpdate.supportsHolding = data.supportsHolding
         callUpdate.supportsGrouping = data.supportsGrouping
